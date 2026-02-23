@@ -38,7 +38,7 @@ document.addEventListener("click",function(e){
             badgemain.innerText="Interviewed"
             updateCounts()
         }
-        else{
+        else{ 
            intSec.appendChild(card)
           
             if (badge) badge.innerText = "Interviewed";
@@ -46,7 +46,7 @@ document.addEventListener("click",function(e){
         }
     }
 })
-//rejected
+
 document.addEventListener("click",function(e){
     const card=e.target.closest(".jobs")
     const parent=card.parentNode
@@ -72,7 +72,7 @@ document.addEventListener("click",function(e){
         }
     }
 })
-//delete
+
 const addint=document.getElementById("int")
 const addrej=document.getElementById("rej")
 function handleDelete(e) {
@@ -103,7 +103,6 @@ function handleDelete(e) {
     }
 }
 
-// Attach the delegation
 addint.addEventListener("click", handleDelete);
 addrej.addEventListener("click", handleDelete);
 
