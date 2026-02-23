@@ -14,8 +14,7 @@ for( const i of jobs){
 }
 total.innerText=count;
 
-
-// interview
+ 
 document.addEventListener("click",function(e){
     const card=e.target.closest(".jobs")
     const parent=card.parentNode
@@ -28,12 +27,13 @@ document.addEventListener("click",function(e){
     const rejSec = document.getElementById("rej");
      const badge = card.querySelector(".dibu");
     if(e.target.closest(".int-btn")){
+      
         if(parent.id=="int")return;
        else if(parent.id=="maindiv"){
             const clonecard=card.cloneNode(true)
             intSec.appendChild(clonecard)
           
-             const badge = clonecard.querySelector(".dibu");
+             const badge = clonecard.querySelector(".dibu")
             if (badge) badge.innerText = "Interviewed";
             badgemain.innerText="Interviewed"
             updateCounts()
