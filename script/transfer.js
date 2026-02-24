@@ -37,6 +37,10 @@ document.addEventListener("click",function(e){
             if (badge) badge.innerText = "Interviewed";
             badgemain.innerText="Interviewed"
             updateCounts()
+                    const intBtn = card.querySelector(".int-btn")
+const rejBtn = card.querySelector(".rej-btn")
+intBtn.disabled = true
+rejBtn.disabled = true
         }
         else{ 
            intSec.appendChild(card)
@@ -62,6 +66,10 @@ document.addEventListener("click",function(e){
             const badge = clonecard.querySelector(".dibu");
             if (badge) badge.innerText = "Rejected";
              badgemain.innerText="Rejected"
+                     const intBtn = card.querySelector(".int-btn")
+const rejBtn = card.querySelector(".rej-btn")
+intBtn.disabled = true
+rejBtn.disabled = true
             updateCounts()
         }
         else{
@@ -78,7 +86,7 @@ const addrej=document.getElementById("rej")
 function handleDelete(e) {
     const delBtn = e.target.closest(".del-btn");  
     
-
+0
     const card = delBtn.closest(".jobs"); 
     if (card) {
         const parent=card.parentNode
